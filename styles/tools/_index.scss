@@ -1,0 +1,7 @@
+// base bootstrap helpers for the bootstrap 'variables'
+// this can not be changed or errors will plague you for the rest of your life
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/variables';
+// @import 'node_modules/bootstrap/scss/alert';

@@ -1,0 +1,9 @@
+// stylelint-disable selector-no-attribute
+// To overwrite variables for this component you need to specify them before the import below
+// e.g. $some-var: 'some awesome change';
+
+// base bootstrap styles for the bootstrap 'grid'
+// this should not be removed from this file
+@import 'node_modules/bootstrap/scss/grid';
+
+// explicit style overrides below this point

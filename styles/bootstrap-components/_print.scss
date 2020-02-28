@@ -1,0 +1,8 @@
+// To overwrite variables for this component you need to specify them before the import below
+// e.g. $some-var: 'some awesome change';
+
+// base bootstrap styles for the bootstrap 'print'
+// this should not be removed from this file
+@import 'node_modules/bootstrap/scss/print';
+
+// explicit style overrides below this point

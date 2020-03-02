@@ -27,7 +27,7 @@ function watcher(done) {
   //   bs,
   // gulp.series(
   gulp.watch(['styles/**/*.scss'], css),
-    gulp.watch("src/*.html").on('change', browserSync.reload),
+    gulp.watch("src/**/*.html").on('change', browserSync.reload),
     gulp.watch("src/css/*.css").on('change', browserSync.reload),
     gulp.watch("src/js/*.js").on('change', browserSync.reload),
     // )

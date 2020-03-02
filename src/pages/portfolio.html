@@ -7,34 +7,40 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="icon" href="img/AF.png">
+  <link rel="icon" href="../assets/img/AF.png">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
   <title>Adam Faraj | Portfolio</title>
 </head>
 
 <body>
 
   <main class="portfolio">
-    <header class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a href="../index.html" class="navbar-brand">Adam Faraj</a> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        </div>
-        <nav class="collapse navbar-collapse navHeaderCollapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="../index.html">About</a></li>
-            <li class="active"><a href="portfolio.html">Portfolio</a></li>
-            <li class="active"><a href="mailto:faraj.9798@gmail.com">Contact</a></li>
-          </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <a class="navbar-brand" href="../index.html">Adam Faraj</a>
+      <button type="button" class="navbar-toggler navbar-light bg-inverse" data-toggle="collapse" data-target="#navHeaderCollapse" aria-controls="navHeaderCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navHeaderCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item mr-5">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a href="./pages/portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a href="mailto:faraj.9798@gmail.com">Contact</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
 
     <section class="portfolio__info">
       <h1 class="portfolio__header">A few of my personal projects.</h1>
-      <p class="portfolio__details">I love experimenting and learning. All of these projects are hand built, to showcase the use of certain industry leading technologies.
+      <p class="portfolio__details p-5">I love experimenting and learning. All of these projects are hand built, to showcase the use of certain industry leading technologies.
         Some API's have changed and some things may not work anymore. These are some of the first projects I worked on when I first started learning development, so some
         are rather old. But I keep them up for memories, to have a good laugh and to see how far I've come.
       </p>
@@ -44,182 +50,179 @@
 
   <main class="projects">
 
-    <div class="project">
-      <a href="http://aflambdapractice.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--desktop">
-        <img src="img/aws.png" alt="AWS" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>My first full stack project, using all AWS technologies. Just a simple input, that writes to a DynamoDB table using a Lambda function, with the front end
-            hosted on S3.
-          </p>
-          <a href="http://aflambdapractice.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/aws.png" alt="AWS" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          My first full stack project, using all AWS technologies. Just a simple input, that writes to a DynamoDB table using a Lambda function, with the front end hosted on S3.
+        </p>
+        <a href="http://aflambdapractice.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile text-decoration-none">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="https://www.jourdainfisher.com" target="_blank" class="project__link--desktop">
-        <img src="img/jfisher.png" alt="AWS" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>Created a website for actor, comedian, writer, Jourdain Fisher. Built using React.
-          </p>
-          <a href="https://www.jourdainfisher.com" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/jfisher.png" alt="Jourdain Fisher" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          Created a website for actor, comedian, writer, Jourdain Fisher. Built using React.
+        </p>
+        <a href="https://www.jourdainfisher.com" target="_blank" class="project__link--mobile text-decoration-none">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="http://moodapp-hosting-mobilehub-2084863695.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--desktop">
-        <img src="img/react.png" alt="ReactJS" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>An app to check your mood while you're at work. Or not at work. Built using ReactJS.</p>
-          <a href="http://moodapp-hosting-mobilehub-2084863695.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/react.png" alt="ReactJS" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          An app to check your mood while you're at work. Or not at work. Built using ReactJS.
+        </p>
+        <a href="http://moodapp-hosting-mobilehub-2084863695.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile text-decoration-none">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="http://aws-website-twitchstream-kp32l.s3-website-us-east-1.amazonaws.com/" target="_blank">
-        <img src="img/twitch3.jpg" alt="Twitch" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>Check to see if your favorite gamer is streaming on Twitch. Created using Twitch.tv's API.</p>
-          <a href="http://aws-website-twitchstream-kp32l.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/twitch3.jpg" alt="Twitch" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          Check to see if your favorite gamer is streaming on Twitch. Created using Twitch.tv's API.
+        </p>
+        <a href="http://aws-website-twitchstream-kp32l.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile text-decoration-none">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="http://aws-website-wikipediaviewer-kfstc.s3-website-us-east-1.amazonaws.com/" target="_blank">
-        <img src="img/wikipedia4.jpg" alt="Wikipedia" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A Wikipedia search app using Wikipedia's API.</p>
-          <a href="http://aws-website-wikipediaviewer-kfstc.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/wikipedia4.jpg" alt="Wikipedia" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A Wikipedia search app using Wikipedia's API.
+        </p>
+        <a href="http://aws-website-wikipediaviewer-kfstc.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile text-decoration-none">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="https://d78eakm0st9ld.cloudfront.net/" target="_blank">
-        <img src="img/weather2.jpg" alt="Avatar" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A mobile weather "app" using manifest.json and a weather API. Add to a phones home screen for native app effect.</p>
-          <a href="https://d78eakm0st9ld.cloudfront.net/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/weather2.jpg" alt="Avatar" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A mobile weather "app" using manifest.json and a weather API. Add to a phones home screen for native app effect.
+        </p>
+        <a href="https://d78eakm0st9ld.cloudfront.net/" target="_blank" class="project__link--mobile text-decoration-none">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="https://adamfaraj.github.io/poolpro/#" target="_blank">
-        <img src="img/hero-image.png" alt="Avatar" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A pool dealer locator using modular JavaScript to dynamically populate the HTML.</p>
-          <a href="https://adamfaraj.github.io/poolpro/#" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/hero-image.png" alt="Avatar" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A pool dealer locator using modular JavaScript to dynamically populate the HTML.
+        </p>
+        <a href="https://adamfaraj.github.io/poolpro/#" target="_blank" class="project__link--mobile text-decoration-none">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="https://adamfaraj.github.io/drumkit/" target="_blank">
-        <img src="img/gambino.jpg" alt="Avatar" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A fun drumkit made using JavaScript.</p>
-          <a href="https://adamfaraj.github.io/drumkit/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/gambino.jpg" alt="Avatar" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A fun drumkit made using JavaScript.
+        </p>
+        <a href="https://adamfaraj.github.io/drumkit/" target="_blank" class="project__link--mobile">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="http://aws-website-randomquotegenerator-6fi4q.s3-website-us-east-1.amazonaws.com/" target="_blank">
-        <img src="img/twitter.jpg" alt="Avatar" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A random design quotes generator that you can tweet. Built with jQuery and Twitter's API.</p>
-          <a href="http://aws-website-randomquotegenerator-6fi4q.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/twitter.jpg" alt="Avatar" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A random design quotes generator that you can tweet. Built with jQuery and Twitter's API.
+        </p>
+        <a href="http://aws-website-randomquotegenerator-6fi4q.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="http://aws-website-bankofhenderson-y9lmi.s3-website-us-east-1.amazonaws.com/" target="_blank">
-        <img src="img/henderson.jpg" alt="Avatar" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A nonexistent bank, the Bank of Henderson, made with AngularJS and Bootstrap.</p>
-          <a href="http://aws-website-bankofhenderson-y9lmi.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/henderson.jpg" alt="Avatar" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A nonexistent bank, the Bank of Henderson, made with AngularJS and Bootstrap.
+        </p>
+        <a href="http://aws-website-bankofhenderson-y9lmi.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="http://aws-website-bmwbyadamcom-wzabq.s3-website-us-east-1.amazonaws.com/" target="_blank">
-        <img src="img/mlogo.png" alt="Avatar" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A sample of a BMW sales event, using modern web technologies.</p>
-          <a href="http://aws-website-bmwbyadamcom-wzabq.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/mlogo.png" alt="Avatar" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A sample of a BMW sales event, using modern web technologies.
+        </p>
+        <a href="http://aws-website-bmwbyadamcom-wzabq.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="http://aws-website-epccom-skqid.s3-website-us-east-1.amazonaws.com/" target="_blank">
-        <img src="img/KB13.jpg" alt="Avatar" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A local auto performance shop, Exotics Motorsports. Redesigned their website for fun</p>
-          <a href="http://aws-website-epccom-skqid.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/KB13.jpg" alt="Avatar" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A local auto performance shop, Exotics Motorsports. Redesigned their website for fun.
+        </p>
+        <a href="http://aws-website-epccom-skqid.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="http://driftingbyadam.com.s3-website-us-east-1.amazonaws.com/" target="_blank">
-        <img src="img/powers.jpg" alt="Avatar" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A passion project about drifting. Another one of my early projects.</p>
-          <a href="http://driftingbyadam.com.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/powers.jpg" alt="Avatar" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A passion project about drifting. Another one of my earlier projects when I was learning about development.
+        </p>
+        <a href="http://driftingbyadam.com.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">
+          See more
+        </a>
       </div>
     </div>
 
-    <div class="project">
-      <a href="http://aws-website-hiphop-z5w4s.s3-website-us-east-1.amazonaws.com/" target="_blank">
-        <img src="img/hiphop.jpg" alt="Avatar" class="project__image">
-      </a>
-      <div class="overlay">
-        <div class="project__text">
-          <p>A fun hip hop project. One of my first projects.</p>
-          <a href="http://aws-website-hiphop-z5w4s.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">See more</a>
-        </div>
+    <div class="project position-relative w-50">
+      <img src="../assets/img/hiphop.jpg" alt="Avatar" class="project__image">
+      <div class="align-items-center d-flex flex-column justify-content-center overlay position-absolute project__text">
+        <p class="w-75">
+          A fun hip hop project. One of my first projects.
+        </p>
+        <a href="http://aws-website-hiphop-z5w4s.s3-website-us-east-1.amazonaws.com/" target="_blank" class="project__link--mobile">
+          See more
+        </a>
       </div>
     </div>
 
   </main>
 
-  <script src="js/jquery-1.9.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- <script src="js/bootstrap.js"></script> -->
 </body>
 
 </html>

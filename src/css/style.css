@@ -7078,7 +7078,7 @@ body {
     width: 100%;
     height: 100%; }
   .projects .project__text {
-    font-size: 0.7em;
+    font-size: 1em;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: left; }
   .projects .project__link--mobile {

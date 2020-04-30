@@ -21,7 +21,7 @@
   "dependencies": {
     "aws-sdk": "^2.627.0",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.8.6",

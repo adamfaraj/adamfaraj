@@ -55,11 +55,11 @@ body {
       }
   
       .skill__text {
-        font-size: 1em;
+        font-size: 1.2em;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%)
+        -ms-transform: translate(-50%, -50%);
       }
     }
   }
@@ -126,11 +126,12 @@ body {
 *****************************TABLETS************************************
 ***********************************************************************/
 
-@media (min-device-width: 768px) {
+@media (min-width: 768px) {
   .about {
     background-image: url('../assets/img/main-image-min.jpg');
     background-size: cover;
     height: 100vh;
+    box-shadow: inset 70em 70em 0 0 rgba(0,0,0,0.5);
 
     .about__title {
       color: #fff;

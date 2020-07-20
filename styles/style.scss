@@ -6,6 +6,10 @@ body {
   font-family: Oswald, sans-serif !important;
 }
 
+.navbar {
+  transition: 0.3s ease;
+}
+
 .about__title {
   animation: mymove 2s ease;
 }
@@ -41,18 +45,23 @@ body {
   }
 
   .skill__container {
+    overflow: hidden;
+    padding-bottom: 2em;
+    height: 300px;
+
+    img {
+      transition: 0.5s ease;
+      max-height: 250px;
+    }
+
     .overlay {
       opacity: 0;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      transition: .5s ease;
+      transition: 0.5s ease;
       background-color: rgba(78, 81, 80, .85);
-  
-      &:hover {
-          opacity: 1;
-      }
   
       .skill__text {
         font-size: 1.2em;
@@ -60,6 +69,17 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+      }
+    }
+
+    &:hover{
+      .overlay {
+        opacity: 1;
+      }
+      img {
+        transform: scale(1.1);
       }
     }
   }
@@ -90,7 +110,7 @@ body {
 
   .project {
     min-height: 200px;
-  
+
     .overlay {
       opacity: 0;
       top: 0;
@@ -99,10 +119,15 @@ body {
       right: 0;
       transition: .5s ease;
       background-color: rgba(27, 28, 28, 0.90);
-  
-      &:hover {
-          opacity: 1;
+    }
+    
+    &:hover{
+      .overlay {
+        opacity: 1;
       }
+      // img {
+      //   transform: scale(1.1);
+      // }
     }
   }
 
@@ -115,6 +140,10 @@ body {
     font-size: 1em;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: left;
+
+    p {
+      width: 90%;
+    }
   }
   
   .project__link--mobile {
@@ -122,6 +151,11 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .nav-item {
+    padding: 0.5em 0;
+  }
+}
 /***********************************************************************
 *****************************TABLETS************************************
 ***********************************************************************/

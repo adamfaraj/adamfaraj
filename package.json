@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/adamfaraj/adamfaraj#readme",
   "dependencies": {
-    "aws-sdk": "^2.627.0",
+    "aws-sdk": "^2.814.0",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1"
   },
